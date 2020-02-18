@@ -1,6 +1,6 @@
 <?php
 
-namespace CokeCancino\LaravelFlow;
+namespace BlenderDeluxe\FlowLaravelSystem;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -21,7 +21,7 @@ class FlowServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/config.php' => config_path('flow.php'),
+            __DIR__ . '/config/config.php' => config_path('flow.php'),
         ]);
     }
 
