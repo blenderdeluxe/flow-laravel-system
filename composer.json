@@ -1,0 +1,22 @@
+{
+    "name": "blenderdeluxe/flow-laravel-system",
+    "description": "Laravel package para la integración de pagos con Flow (https://www.flow.cl)",
+    "keywords": ["laravel", "flow", "pagos", "webpay", "transbank", "servipag", "multicaja", "chile"],
+    "homepage": "https://github.com/blenderdeluxe/flow-laravel-system",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Cortés",
+            "email": "diegocortes@blenderdeluxe.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0|^6.0|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BlenderDeluxe\\FlowLaravelSystem\\": "src/"
+        }
+    }
+}
