@@ -32,13 +32,13 @@ class FlowServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->bindFlowClass();
+        $this->bindFlowApiClass();
     }
 
-    private function bindFlowClass()
+    private function bindFlowApiClass()
     {
-        $this->app->bind(Flow::class, function ($app) {
-            return new Flow();
+        $this->app->bind(FlowApi::class, function ($app) {
+            return new FlowApi();
         });
     }
 
@@ -49,6 +49,6 @@ class FlowServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return [Flow::class];
+        return [FlowApi::class];
     }
 }
